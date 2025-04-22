@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Quicksand&display=swap');
+:root {
+  --site-dark: #0b110c;
+  --site-greed-principal: #3ba957;
+  --site-white: #fffcff;
+  
+  --site-font-title: 'Fredoka', sans-serif;
+  --site-font-body: 'Quicksand', sans-serif;
+}
+
+.ejemplo {
+  color: var(--site-dark);
+  font-family: var(--site-font-title); 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-base {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: 
+    auto 1fr auto;;
+}
+
+main {
+  padding-top: 15%;
+  max-width: 100vw;
+}
+
+/* ====== nav ====== */
+
+
+
+/* ====== footer ====== */
+
+
+
+/* ====== inicio ====== */
+
+
+
+/* ====== productos ====== */
+
+
+
+/* ====== contáctenos ====== */
+
+
+
+
+
