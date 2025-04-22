@@ -204,3 +204,58 @@ row > div:nth-child(2) {
 
 
 /* ====== contáctenos ====== */
+
+#contacto{
+  background-color: var(--site-greed-principal);
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#contacto h2{
+  color: var(--site-dark);
+  font-family: var(--site-font-title);
+
+}
+
+#contacto h3{
+  font-family: var(--site-font-title);
+  font-size: large;
+}
+
+#contactform{
+  padding: 20px;
+
+}
+#printmensaje{
+  color: var(--site-dark);
+  font-size: small;
+}
+
+#inputemail {
+  font-size: large;
+  color: var(--site-dark);
+  background-color: var(--site-white);
+  border: 2px solid;
+  border-color: var(--site-dark);
+  padding: 8px 30px;
+}
+
+#suscribirse {
+  font-size: large;
+  color: var(--site-white);
+  background-color: var(--site-dark);
+  border: 2px solid;
+  border-color: var(--site-dark);
+  padding: 8px 30px;
+}
+
+#suscribirse:hover{
+  color: var(--site-dark);
+  background-color: var(--site-white);
+  border: 2px solid;
+  border-color: var(--site-dark);
+
+}
+
