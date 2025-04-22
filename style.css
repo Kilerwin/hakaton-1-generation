@@ -43,9 +43,44 @@ main {
 
 
 /* ====== productos ====== */
+.precio {
+  color: var(--site-greed-principal);
+}
 
+.boton-ver {
+  background-color: var(--site-white);
+  color: black;
+  border: 1px solid var(--site-greed-principal);
+  border-radius: 14px;
+  text-align: center;
+  padding: 4px 20px;
+  font-family: var(--site-font-body);
+}
 
+.boton-agregar {
+  background-color: var(--site-greed-principal);
+  color: #fffcff;
+  border: 1px solid var(--site-greed-principal);
+  border-radius: 14px;
+  text-align: center;
+  padding: 4px 20px;
+  font-family: var(--site-font-body);
+}
 
+.boton-agregar:hover,
+.boton-ver:hover {
+  filter: brightness(0.8); /* Esto lo hace un 20% más oscuro */
+}
+
+.card {
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-color: transparent !important;
+}
+
+.card:hover {
+  border-color: rgba(16, 14, 14, 0.305) !important;
+}
 /* ====== contáctenos ====== */
 
 

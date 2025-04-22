@@ -22,7 +22,9 @@
           
         </section>
         <section id="productos">
-
+          <div class="container my-5">
+            <div class="row" id="generador-producto"></div>
+          </div>
         </section>
         <section id="contacto">
 
@@ -33,7 +35,45 @@
       </footer>
     </div>
     <!--- modal --->
+    <div class="modal fade" id="productoModal" tabindex="-1" aria-labelledby="productoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body d-flex gap-4 align-items-start">
+            <!-- Imagen -->
+            <div class="flex-shrink-0">
+              <img id="modalImagen" src="" alt="Imagen del producto" style="width: 250px; height: auto; object-fit: cover;" class="rounded">
+            </div>
 
+            <!-- Información del producto -->
+            <div class="flex-grow-1">
+              <h5 id="modalNombre" class="mb-2">Nombre del producto</h5>
+              <p id="modalDescripcion" class="text-muted mb-3">Descripción breve del producto.</p>
+              <h6 id="modalPrecio" class="text-primary fw-bold">$00.000</h6>
+              <button class="btn btn-success mt-3">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- alerta -->
+    <div id="alertaPersonalizada" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1100;"></div>
+
+    <!-- sidebar -->
+    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" onclick="mostrarCarrito()">
+      Mis compras
+    </a>
+    
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Mis compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="carroCompras"></div>
+      </div>
+    </div>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
