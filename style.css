@@ -149,7 +149,7 @@ footer{
   letter-spacing: 0.5px; 
   line-height: 1.2; 
   margin-bottom: 8px;
-  font-size: 18px; 
+  font-size: 16px; 
 }
 
 .container_footer .col-12.text-center {
@@ -237,6 +237,71 @@ row > div:nth-child(2) {
 .card:hover {
   border-color: rgba(16, 14, 14, 0.305) !important;
 }
+
+#productoModal .modal-body > div:not(:first-child) { 
+  border: 2px solid #0b110c; 
+  padding: 15px; 
+  text-align: center; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  height: 250px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+#productoModal .modal-body button { 
+  margin-top: 100px; 
+}
+
+
+@media (max-width: 991.98px) {
+  #productoModal #modalImagen {
+    max-width: 150px;
+  }
+
+  #modalNombre {
+    font-size: 1.2rem;
+  }
+
+  #modalDescripcion {
+    font-size: 0.9rem;
+  }
+
+  #modalPrecio {
+    font-size: 1rem;
+  }
+
+  #productoModal .modal-body button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 429.98px) {
+  #productoModal #modalImagen {
+    max-width: 150px;
+  }
+
+  #modalNombre {
+    font-size: 0.9rem;
+  }
+
+  #modalDescripcion {
+    font-size: 0.7rem;
+  }
+
+  #modalPrecio {
+    font-size: 0.8rem;
+  }
+
+  #productoModal .modal-body button {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+
 /* ====== contáctenos ====== */
 
 #contacto{
