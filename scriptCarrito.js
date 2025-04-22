@@ -44,12 +44,15 @@ const mostrarCarrito = () => {
     item.classList.add('mb-3', 'd-flex', 'justify-content-between', 'align-items-start')
 
     item.innerHTML = `
-      <div>
+    <div class="d-flex w-100 align-items-center">
+      <img src="${producto.imagen}" alt="${producto.nombre}" class="me-3 rounded" style="width: 60px; height: 60px; object-fit: cover;">
+      <div class="flex-grow-1">
         <h6 class="mb-1">${producto.nombre}</h6>
         <p class="mb-1">Cantidad: ${producto.cantidad}</p>
         <p class="mb-1">Precio: ${producto.precio}</p>
       </div>
-      <button class="btn btn-sm btn-danger" onclick="eliminarProducto(${producto.id})">Quitar</button>
+      <button class="btn btn-sm btn-danger ms-2" onclick="eliminarProducto(${producto.id})">Quitar</button>
+    </div>
     `
 
     contenedor.appendChild(item)
