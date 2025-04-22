@@ -123,6 +123,9 @@ const mostrarModalProducto = (id) => {
     document.getElementById("modalNombre").textContent = producto.nombre
     document.getElementById("modalDescripcion").textContent = producto.descripcion
     document.getElementById("modalPrecio").textContent = producto.precio
+    document.getElementById("modalAgregar").onclick = () => {
+      agregarProducto(id)
+    }
 
     const modal = new bootstrap.Modal(document.getElementById("productoModal"))
     modal.show()

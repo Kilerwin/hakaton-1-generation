@@ -24,7 +24,7 @@ const eliminarProducto = (id) => {
     compras[indexCompras].cantidad !== 1 ? compras[indexCompras].cantidad -= 1 : compras.splice(indexCompras, 1)
   }
   localStorage.setItem("compras", JSON.stringify(compras))
-  mostrarAlerta("Carrtio de compras modificado")
+  mostrarAlerta("Carrito de compras modificado")
   mostrarCarrito()
 }
 
