@@ -1,4 +1,5 @@
-const accHeaders = document.querySelectorAll('.accordion-header');
+
+const accHeaders = document.querySelectorAll('.accordion-header'); //querySelectorAll(selector): método que toma un selector CSS como argumento.
 
 accHeaders.forEach(header => {
     header.addEventListener('click', function() {

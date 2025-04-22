@@ -94,25 +94,33 @@ main {
   color: var(--site-greed-principal);
 }
 /* acordeon */
+
+.accordion{
+  background-color: var(--site-dark);
+}
+
 .accordion-container {
   width: 100%; /* Ajusta el ancho según sea necesario */
   background-color: var(--site-dark);
   color: var(--site-white);
   text-align: center;
 }
+
 .accordion-item {
-  
-  border: 1px solid var(--site-dark); /* Un borde gris oscuro para que se note sobre el fondo negro */
-  border-radius: none;
+  border: none; /* Elimina el borde */
+  border-bottom: 1px solid var(--site-dark); /* Agrega una línea divisoria entre elementos */
+  border-radius: 0; /* Elimina el redondeo */
   overflow: hidden; /* Para ocultar el contenido */
 }
+
 .accordion-header {
-  background-color:var(--site-dark); /* Un gris más oscuro para el header */
+  background-color: var(--site-dark); /* Un gris más oscuro para el header */
   color: white;
   cursor: pointer;
   padding: 10px;
   width: 100%;
-  border: none;
+  border: none; /* Elimina el borde */
+  border-radius: 0; /* Elimina el redondeo */
   text-align: center; /* Centrar el texto del header */
   outline: none;
   font-size: 16px;
@@ -124,6 +132,7 @@ main {
   text-align: center; /* El contenido se alinea a la izquierda para mejor legibilidad */
   display: none; /* Oculta el contenido por defecto */
 }
+
 .accordion-item.active .accordion-content {
   display: block; /* Muestra el contenido cuando el item está activo */
 }
