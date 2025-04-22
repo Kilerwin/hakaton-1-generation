@@ -32,7 +32,64 @@ main {
 
 /* ====== nav ====== */
 
+/* *{
+  border: 1px, solid, red;
+} */
+ .promociones-mes{
+  background-color: var(--site-dark);
+  color: var(--site-white);
+  text-align: center;
+ }
+.nav{
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.navbar-brand img {
+  width: 30px;
+  margin-right: 10px;
+}
+.navbar-search input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+.navbar-search button {
+  background-color:var(--site-greed-principal);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.navbar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.navbar-menu li {
+  margin-right: 20px;
+}
+.navbar-menu a {
+  text-decoration: none;
+  color: #333;
+}
 
+/* Carrito */
+.navbar-cart img {
+  width: 35px;
+  
+}
 
 /* ====== footer ====== */
 
